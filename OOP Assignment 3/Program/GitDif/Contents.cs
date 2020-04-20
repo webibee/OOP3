@@ -7,36 +7,43 @@ namespace GitDif
 {
     class Contents : TextFiles // Derived Class (Child)
     {
-        private readonly List<string> FirstContentsList = new List<string>(File.ReadAllLines(FirstFileName.ToString()));
-        private readonly List<string> SecondContentsList = new List<string>(File.ReadAllLines(SecondFileName.ToString()));
-        public Contents(string[] UserFile) : base(UserFile) { }
-        public override List<char> FirstIndividualCharacters() // Splitting first text file's contents (strings) into individual characters and storing in new list(char) 
+        private readonly List<string> FirstContentsList;
+        private readonly List<string> SecondContentsList;
+        public Contents(string[] UserFile) : base(UserFile) 
         {
-            List<char> Temp_List = new List<char>();
-            List<string> Temp_First_Contents = FirstContentsList; //new List<string>(File.ReadAllLines(FirstFileName.ToString()));
-            foreach (string str in Temp_First_Contents)
-            {
-                str.Split();
-                foreach (char chars in str)
-                {
-                    Temp_List.Add(chars);
-                }
-            }
-            return Temp_List;
+            FirstContentsList = new List<string>(File.ReadAllLines(FirstFileName.ToString()));
+            SecondContentsList = new List<string>(File.ReadAllLines(SecondFileName.ToString()));
         }
-        public override List<char> SecondIndividualCharacters() // Splitting second text file's contents (strings) into individual characters and storing in new list(char) 
+        public override List<string> FirstContents()
         {
-            List<char> Temp_List = new List<char>();
-            List<string> Temp_Second_Contents = SecondContentsList;
-            foreach (string str in Temp_Second_Contents)
+            return FirstContentsList;
+        }
+        public override List<string> SecondContents()
+        {
+            return SecondContentsList;
+        }
+
+        public override Dictionary<int, string> FirstFileDictionary()
+        {
+            Dictionary<int, string> FirstFileDict = new Dictionary<int, string>();
+            int DictionaryKeyValue = 1;
+            foreach (string line in FirstContentsList)
             {
-                str.Split();
-                foreach (char chars in str)
-                {
-                    Temp_List.Add(chars);
-                }
+                FirstFileDict.Add(DictionaryKeyValue, line);
+                DictionaryKeyValue++;
             }
-            return Temp_List;
+            return FirstFileDict;
+        }
+        public override Dictionary<int, string> SecondFileDictionary()
+        {
+            Dictionary<int, string> SecondFileDict = new Dictionary<int, string>();
+            int DictionaryKeyValue = 1;
+            foreach (string line in SecondContentsList)
+            {
+                SecondFileDict.Add(DictionaryKeyValue, line);
+                DictionaryKeyValue++;
+            }
+            return SecondFileDict;
         }
     }
 }
