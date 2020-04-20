@@ -3,3 +3,60 @@ Program Executed:: 20/04/2020 16:41:05
 
 >: [Input] diff GitRepositories_1a.txt GitRepositories_1b.txt
 Accepted User Input:: diff GitRepositories_1a.txt GitRepositories_1b.txt 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Program Executed:: 20/04/2020 17:10:06
+
+>: [Input] diff GitRepositories_1a.txt GitRepositories_1b.txt
+Accepted User Input:: diff GitRepositories_1a.txt GitRepositories_1b.txt 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Program Executed:: 20/04/2020 17:10:29
+
+>: [Input] diff GitRepositories_2a.txt GitRepositories_2b.txt
+Accepted User Input:: diff GitRepositories_2a.txt GitRepositories_2b.txt 
+
+>: [Output] Line: 5
+You can only push to two types of URL (RED)url (GREEN)addresses: 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Program Executed:: 20/04/2020 17:10:52
+
+>: [Input] diff GitRepositories_1a.txt GitRepositories_1b.txt
+Accepted User Input:: diff GitRepositories_1a.txt GitRepositories_1b.txt 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Program Executed:: 20/04/2020 17:14:46
+
+>: [Input] diff GitRepositories_2a.txt GitRepositories_2b.txt
+Accepted User Input:: diff GitRepositories_2a.txt GitRepositories_2b.txt 
+
+>: [Output] Line: 5
+You can only push to two types of URL(RED)url(GREEN)addresses: 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Program Executed:: 20/04/2020 17:16:22
+
+>: [Input] dif test.txt test2.txt
+Invalid command or file(s) entered...
+
+>: [Input] diff test.txt test2.txt
+Invalid command or file(s) entered...
+
+>: [Input] diff GitRepositories_2a.txt GitRepositories_2b.txt
+Accepted User Input:: diff GitRepositories_2a.txt GitRepositories_2b.txt 
+
+>: [Output] Line: 5
+You can only push to two types of URL(RED)url(GREEN)addresses: 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Program Executed:: 20/04/2020 17:18:12
+
+>: [Input] diff GitRepositories_3a.txt GitRepositories_3b.txt
+Accepted User Input:: diff GitRepositories_3a.txt GitRepositories_3b.txt 
+
+>: [Output] Line: 1
+After initializing a pull request, you'll(RED)you(GREEN)will(GREEN)see a review page that shows a high-level overview of the changes between your branch (the compare branch) and the repository's base branch. You can add a summary of the proposed changes, review the changes made by commits, add labels, milestones, and assignees, and @mention individual contributors or teams. For more information, see "Creating a pull request." 
+>: [Output] Line: 3
+Once you've created a pull request, you can push commits from your topic branch to add them to the(GREEN)existing(GREEN)pull(GREEN)request.(GREEN)These(GREEN)commits(GREEN)will(GREEN)appear(GREEN)in(GREEN)chronological(GREEN)order(GREEN)within(GREEN)your existing(RED)pull request.(RED)These(RED)commits(RED)request(GREEN)and(GREEN)the(GREEN)changes(GREEN)will appear(RED)be(GREEN)visible(GREEN)in chronological(RED)order(RED)within(RED)your(RED)pull(RED)request(RED)and(RED)the changes(RED)will(RED)be(RED)visible(RED)in(RED)the(RED)"Files changed" tab. 
+>: [Output] Line: 5
+Other contributors can review your proposed changes,(RED)change,(GREEN)add review comments, contribute to the pull request discussion, and even add commits to the pull request. 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Program Executed:: 20/04/2020 17:21:11
+
+>: [Input] diff GitRepositories_1a.txt GitRepositories_1b.txt
+Accepted User Input:: diff GitRepositories_1a.txt GitRepositories_1b.txt 

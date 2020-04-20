@@ -15,7 +15,7 @@ namespace GitDif
             List<string> Second_Contents = new List<string>();
             Dictionary<int, string> First_Dictionary = new Dictionary<int, string>();
             Dictionary<int, string> Second_Dictionary = new Dictionary<int, string>();
-            WriteToLog("------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------", false);
+            WriteToLog("\n------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------", false);
             DateTime LocalDate = DateTime.Now;
             WriteToLog($"Program Executed:: {LocalDate}", false);
             while (!Leave_Loop) //Error checking User's command and parameter inputs - only allowing 'dif' command and valid text file names beginning with "GitRepositories_" and being of type ".txt"
@@ -69,15 +69,15 @@ namespace GitDif
                         }
                     }
                 }
-                else
+                else //                                           HERE SCOTT                      HERE SCOTT 
                 {
-                    string temp = ">: [Output] ";
-                    Console.Write(temp);
-                    WriteToLog(temp, true);
+                    //string temp = ;
+                    Console.Write(">: [Output] ");
+                    WriteToLog(">: [Output] ", true);
                     Console.ForegroundColor = ConsoleColor.Green;
-                    temp = $"{User_Input[1]} and {User_Input[2]} are not different";
-                    Console.Write(temp);
-                    WriteToLog(temp, true);
+                    //temp = $"{User_Input[1]} and {User_Input[2]} are not different";
+                    Console.Write($"{User_Input[1]} and {User_Input[2]} are not different");
+                    WriteToLog($"{User_Input[1]} and {User_Input[2]} are not different", true);
                     Console.ResetColor();
                 }
             }
@@ -152,8 +152,8 @@ namespace GitDif
                 else if ((FirstWordFirstString != FirstWordSecondString) & (!(SecondRemaining.Contains(FirstWordFirstString))))
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
-                    string temp = FirstWordFirstString + " ";
-                    Console.Write(temp);
+                    string temp = FirstWordFirstString;
+                    Console.Write(temp + " ");
                     WriteToLog(temp + "(RED)", true);
                     Console.ResetColor();
                     OutputDifference(FirstRemaining, SecondString);
@@ -161,8 +161,8 @@ namespace GitDif
                 else if ((FirstWordFirstString != FirstWordSecondString) & (!(FirstRemaining.Contains(FirstWordSecondString))))
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
-                    string temp = FirstWordSecondString + " ";
-                    Console.Write(temp);
+                    string temp = FirstWordSecondString;
+                    Console.Write(temp + " ");
                     WriteToLog(temp + "(GREEN)", true);
                     Console.ResetColor();
                     OutputDifference(FirstString, SecondRemaining);
@@ -170,8 +170,8 @@ namespace GitDif
                 else if ((FirstWordFirstString != FirstWordSecondString) & (FirstChecker == true))
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
-                    string temp = FirstWordSecondString + " ";
-                    Console.Write(temp);
+                    string temp = FirstWordSecondString;
+                    Console.Write(temp + " ");
                     WriteToLog(temp + "(GREEN)", true); // true = write; false = writeLINE
                     Console.ResetColor();
                     OutputDifference(FirstString, SecondRemaining);
@@ -179,8 +179,8 @@ namespace GitDif
                 else if ((FirstWordFirstString != FirstWordSecondString) & (SecondChecker == true))
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
-                    string temp = FirstWordSecondString + " ";
-                    Console.Write(temp);
+                    string temp = FirstWordSecondString;
+                    Console.Write(temp + " ");
                     WriteToLog(temp + "(GREEN)", true); // true = write; false = writeLINE
                     Console.ResetColor();
                     OutputDifference(FirstString, SecondRemaining);

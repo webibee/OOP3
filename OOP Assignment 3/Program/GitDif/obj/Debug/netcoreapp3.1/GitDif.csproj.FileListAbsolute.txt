@@ -21,4 +21,3 @@ C:\Users\benwe\Desktop\OOP Assignment 3\Program\GitDif\obj\Debug\netcoreapp3.1\G
 C:\Users\benwe\Desktop\OOP Assignment 3\Program\GitDif\obj\Debug\netcoreapp3.1\GitDif.dll
 C:\Users\benwe\Desktop\OOP Assignment 3\Program\GitDif\obj\Debug\netcoreapp3.1\GitDif.pdb
 C:\Users\benwe\Desktop\OOP Assignment 3\Program\GitDif\obj\Debug\netcoreapp3.1\GitDif.genruntimeconfig.cache
-C:\Users\benwe\Desktop\OOP Assignment 3\Program\GitDif\obj\Debug\netcoreapp3.1\GitDif.csprojAssemblyReference.cache
